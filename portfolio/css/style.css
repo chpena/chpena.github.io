@@ -79,7 +79,7 @@ h1{
 
 footer{
   /*background-color: black;*/
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
