@@ -13,9 +13,13 @@ a{
 
 body{
 	background-color: black;
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/background.jpg") ;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 p{
@@ -75,6 +79,10 @@ h1{
 
 footer{
   /*background-color: black;*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   color: white;
   padding: 50px;
   text-align: center;
