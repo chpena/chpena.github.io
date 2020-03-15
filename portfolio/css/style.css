@@ -1,0 +1,81 @@
+ul.bands_nav{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #FFFFFF;
+}
+
+a{
+	color: #FFFFFF;
+}
+
+body{
+	background-color: black;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+p{
+	color: white;
+}
+
+.image_links{
+	display: grid;
+	grid-template-columns: auto auto; 
+  	grid-template-rows: auto auto; 
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:active,
+.skip a:focus,
+.skip a:focus{
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+div.met a img{
+	grid-column-end: 2;
+
+}
+
+div.met{
+	display: grid;
+	grid-column: 1 / 2;
+}
+
+a#pan{
+	display: grid;
+	grid-column: 3 / 4;
+}
+
+
+h1{
+	text-align: center;
+	/*font-family: 'Rock Salt', cursive;*/
+	font-family: 'Nosifer', cursive;
+	color: white;
+
+}
+
+footer{
+  /*background-color: black;*/
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
