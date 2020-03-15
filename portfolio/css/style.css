@@ -22,8 +22,18 @@ body{
 	background-size: cover;
 }
 
+img{
+  display: block;
+  max-height: 300px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 p{
 	color: white;
+	text-align: center;
 }
 
 .image_links{
@@ -31,6 +41,10 @@ p{
 	grid-template-columns: auto auto; 
   	grid-template-rows: auto auto; 
 }
+
+/*div.image_links p{
+	text-align: center;
+}*/
 
 .skip a{
   background: white;
@@ -79,7 +93,7 @@ h1{
 
 footer{
   /*background-color: black;*/
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
