@@ -12,6 +12,8 @@ a{
 }
 
 body{
+/*	display: flex;
+	flex-wrap: wrap;*/
 	background-color: black;
 	background-image: url("../images/background.jpg") ;
 	background-repeat: no-repeat;
@@ -28,6 +30,7 @@ img{
   max-width: 500px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 
@@ -60,6 +63,8 @@ p{
 .skip a:active,
 .skip a:focus,
 .skip a:focus{
+  background-color: black;
+  color: white;
   left: 0;
   top: 0;
   width: auto;
@@ -92,7 +97,7 @@ h1{
 }
 
 footer{
-  /*background-color: black;*/
+  background-color: black;
   position: relative;
   right: 0;
   bottom: 0;
@@ -102,7 +107,7 @@ footer{
   text-align: center;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 800px){
 	footer{
 		position: absolute;
 	}
