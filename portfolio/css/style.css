@@ -34,8 +34,8 @@ body{
 
 img{
   display: block;
-  max-height: 300px;
-  max-width: 500px;
+  max-height: 250px;
+  max-width: 450px;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
@@ -104,6 +104,25 @@ h1{
 
 }
 
+div.gallery_pics{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img#testimg:hover{
+	animation-name: zoom;
+}
+
+/*div.gallery_pics:hover{
+	border: 2px solid #E33614;
+	animation-name: zoom;
+}*/
+
+@keyframes zoom{
+	from {width: 300px;}
+	to {width: 500px;}
+}
+
 footer{
   background-color: black;
   position: relative;
@@ -115,8 +134,18 @@ footer{
   text-align: center;
 }
 
-/*@media screen and (min-width: 800px){
-	footer{
-		position: absolute;
+@media screen and (min-width: 800px){
+	img{
+		max-height: 300px;
+  		max-width: 500px;
 	}
-}*/
+
+	@keyframes zoom{
+		from {width: 350px;}
+		to {width: 550px}
+	}
+
+	img#testimg{
+		animation-name: zoom;
+	}
+}
