@@ -7,6 +7,14 @@ ul.bands_nav{
 	color: #FFFFFF;
 }
 
+li a:hover, a:focus{
+  color: #FC3B32;
+  border: 3px solid #0837CB;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
 a{
 	color: #FFFFFF;
 }
