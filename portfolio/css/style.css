@@ -23,7 +23,8 @@ body{
 /*	display: flex;
 	flex-wrap: wrap;*/
 	background-color: black;
-	background-image: url("../images/background.jpg") ;
+/*	background-image: url("../images/background.jpg") ;*/
+	background-image: url("../images/background2.jpg") ;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	-webkit-background-size: cover;
@@ -49,8 +50,8 @@ p{
 }
 
 div.image_links{
-	height: 210px;
-	width: 100px;
+/*	height: 210px;
+	width: 100px;*/
 	display: grid;
 	grid-template-columns: auto auto; 
   	grid-template-rows: auto auto; 
@@ -132,8 +133,18 @@ img#kingsolo{
 
 
 @keyframes zoom{
-	from {width: 300px;}
-	to {width: 500px;}
+	from {height: 50px;}
+	to {height: 200px;}
+}
+
+@keyframes pantera_zoom{
+  from {width: 50px;}
+  to {width: 250px;}
+} 
+
+img#animate{
+	animation-name: pantera_zoom;
+	animation-duration: 2s;
 }
 
 footer{
@@ -168,8 +179,20 @@ footer{
 	}
 }
 
+@media screen and (min-width: 1024px){
+	ul.bands_nav{
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		justify-content: center;
+		grid-gap: 10px;
+		padding: 10px; 
+	}
+}
 @media screen and (prefers-reduced-motion: reduce){
 	.zoom{
+		animation: none;
+	}
+	.pantera_zoom:{
 		animation: none;
 	}
 }
