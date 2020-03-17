@@ -39,6 +39,7 @@ img{
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
+  border: 2px solid white;
 }
 
 
@@ -47,12 +48,20 @@ p{
 	text-align: center;
 }
 
-.image_links{
+div.image_links{
+	height: 210px;
+	width: 100px;
 	display: grid;
-	grid-template-columns: auto auto; 
+	grid-template-columns: auto auto auto auto; 
   	grid-template-rows: auto auto; 
+  	align-content: center;
+  	align-items: center;
 }
 
+div.pan a img{
+	display: grid;
+	grid-column: 3 / 4
+}
 /*div.image_links p{
 	text-align: center;
 }*/
@@ -113,10 +122,14 @@ img#testimg:hover{
 	animation-name: zoom;
 }
 
-/*div.gallery_pics:hover{
-	border: 2px solid #E33614;
-	animation-name: zoom;
-}*/
+img#kingholt{
+	filter: grayscale(75%);
+}
+
+img#kingsolo{
+	filter:invert(25%);
+}
+
 
 @keyframes zoom{
 	from {width: 300px;}
@@ -140,12 +153,17 @@ footer{
   		max-width: 500px;
 	}
 
+	div.gallery_pics{
+	animation-name: zoom;
+
+	}
+
 	@keyframes zoom{
 		from {width: 350px;}
 		to {width: 550px}
 	}
 
-	img#testimg{
-		animation-name: zoom;
+	img#testimg:hover{
+		opacity: .5;
 	}
 }
